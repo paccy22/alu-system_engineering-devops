@@ -14,7 +14,7 @@ frontend oreste-frontend
         bind *:80
         mode http
         default_backend oreste-backend
-backend oreste-backend
+backend pacifique-backend
         balance roundrobin
         server 6238-web-01 54.196.216.8:80 check
         server 6238-web-02 98.80.15.59:80 check
